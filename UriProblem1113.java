@@ -5,20 +5,19 @@ import java.util.Scanner;
 public class UriProblem1113 {
     public static void main(String[] args){
         Scanner sx = new Scanner(System.in);
-        int x = sx.nextInt();
-        int y = sx.nextInt();
+            int x = 0, y = 0;
+            String msg = "";
 
-        while(x != y){
-            if(x < y){
-                System.out.printf("Crescente\n");
-
-            }else{
-                System.out.printf("Decrescente\n");
-
-            }
+        do{
             x = sx.nextInt();
             y = sx.nextInt();
-        }
+
+            if(x < y){msg = "Crescente"; }else if(y > y){msg = "Decrescente";}
+
+            System.out.printf("%s\n", msg);
+
+        }while(x != y);
+
 
         sx.close();
 
