@@ -16,10 +16,10 @@ public class UriProblem1066 {
                 neg++;
             }
 
-            if(a % 2 == 0){
+            if(Math.abs(a) != 0 && a % 2 == 0){
                 par++;
 
-            }else{
+            }else if(Math.abs(a) != 0){
                 impar++;
             }
 
