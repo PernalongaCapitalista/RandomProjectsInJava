@@ -21,7 +21,7 @@ public class genRandomPassPhraseOPTMIZED {
     }
 
     public static int passPhrase(int c, Random r, String charac, int randomInt, char randomChar){
-        charac = "qwertyuiopasdfghjklçzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%*()-=_+'¹²³£¢¬{[]}§ªº~´─°<|";
+        charac = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%*()-=_+'{[]";
         System.out.print("Sua senha eh: ");
         for(int i = 8; i < 21; i++){
                 if(c == i){
@@ -29,8 +29,10 @@ public class genRandomPassPhraseOPTMIZED {
                     randomInt = r.nextInt(charac.length());
                     randomChar = charac.charAt(randomInt);
                     System.out.print(randomChar);
-                }
+            
+		    }
 
+		System.out.println();
             }
         }
 
